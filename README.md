@@ -2,6 +2,14 @@ Using docker image from gettyimages
 
 To run 'spark-basic':
 
+Start docker-machine called 'default' if not already running:
+
+    docker-machine start default
+    
+Tell Docker to use this docker-machine called 'default':
+
+    eval "$(docker-machine env default)"
+
 Start up Spark master and worker:
     
     docker-compose up
